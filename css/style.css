@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*base*/
+:root {
+  --branco: #fff;
+  --letra: #5e2a2a;
+  --azul-claro: #DFE3E5;
+  --vermelho-forte: #B72E2E;
+  --cinza-escuro: #4F4C4C;
+  --cinza-claro: #F7F4F4;
+  --cinza-medio: #D9D9D9;
+  --fonte-link: #0084FF;
+  --fonte-cinza: #666;
+  --borda-cabecalho-mobile: #a06d30;
+  --bg-rodape: #333;
+  --bg-chamada-mobile: #f997a4;
+  --bg-destaques-mobile: #1c1c48;
+  --planos-cartao-start: #56CCF2;
+  --planos-cartao-ultra: #B04CD9;
+  --planos-cartao-mega: #E33B3B;
+  --sombra: #00000020;
+  --montserrat: "Monteserrat", sans-serif;
+  --Open-Sans: "Open Sans",sans-serif;
+}
+
+body {
+  font-family: --Open-Sans;
+}
+
+.container {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border: 1px solid var(--branco);
+}
+
+.borda_img {
+  box-shadow: 0 2px 10px 5px var(--sombra);
+}
+
+/*cabeçalho*/
+.cabecalho {
+  color: var(--branco);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--borda-cabecalho-mobile);
+  position: absolute;
+}
+.cabecalho__navegacao {
+  text-align: center;
+}
+.cabecalho__link {
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+  margin-bottom: 1.25rem;
+  margin-left: 0.7rem;
+}
+.cabecalho__logo__gika {
+  margin-bottom: 1rem;
+  width: 300px;
+}
+
+/*chamado*/
+.post__gika {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--letra);
+  text-align: center;
+  background-color: var(--bg-chamada-mobile);
+  padding-top: 12.25rem;
+  padding-bottom: 2.5rem;
+}
+.post__titulo {
+  font-family: var(--montserrat);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.gika__texto {
+  font-size: 1.25rem;
+  line-height: normal;
+  margin: 0 auto 2.5rem;
+}
+.gikabotao__gika {
+  width: 100%;
+}
+
+/*destaques*/
+.destaques {
+  background-color: var(--azul-claro);
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+.destaques__titulos {
+  color: var(--cinza-escuro);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.destaques__painel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.destaques__painel_img {
+  width: 100vw;
+  max-width: 500px;
+  margin-bottom: 0.5rem;
+}
+.destaques__painel__txt {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: normal;
+  text-align: center;
+}
+.destaques__botao {
+  color: var(--vermelho-forte);
+  border-color: var(--vermelho-forte);
+  margin: 0 auto;
+}
+
+.ghibi {
+  width: 40%;
+}
+.ghibi__container {
+  display: flex;
+  flex-direction: row;
+}
+.ghibi__text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.motivo_gika {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  background-color: var(--branco);
+}
+
+/*# sourceMappingURL=style.css.map */
