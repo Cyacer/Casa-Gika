@@ -140,21 +140,54 @@ body {
 }
 
 .ghibi {
-  width: 40%;
+  width: 45%;
 }
 .ghibi__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .ghibi__text {
   font-size: 20px;
   font-weight: 300;
+}
+.ghibi_happy {
+  width: 30%;
 }
 
 .motivo_gika {
   padding-top: 2.5rem;
   padding-bottom: 2rem;
   background-color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+  .cabecalho__link {
+    font-size: 1.875rem;
+  }
+
+  .borda_img {
+    border: 10px solid var(--bg-chamada-mobile);
+    border-radius: 20px;
+  }
+
+  .motivo_gika {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gika__texto {
+    font-size: 1.25rem;
+    line-height: normal;
+    border-radius: 1.875rem;
+    padding: 0.625rem;
+  }
+  .gika .ghibi {
+    width: 25%;
+  }
+  .gika .ghibi__container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

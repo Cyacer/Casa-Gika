@@ -121,7 +121,7 @@
         &__texto {
             font-size: 1.25rem;
             line-height: normal;
-        
+            
             margin: 0 auto 2.5rem;
         }
 
@@ -189,16 +189,23 @@
         }
     }
     .ghibi{
-        width: 40%;
-        
+        width: 45%;
+
         &__container{
             display: flex;
-            flex-direction: row;
+            flex-direction:column;
         }
         &__text{
             font-size: 20px;
             font-weight: 300;
         }
+
+        &_happy{
+            width: 30%;
+        }
+       // @include for-desktop-only {
+      
+       // }
     }
 
     .motivo_gika{
@@ -207,3 +214,60 @@
         background-color: var(--branco);
             
     }
+
+
+
+
+    //*desktop*// 
+
+    //@mixin for-desktop-only {
+        
+        //@media (min-width: 1024px ) { @content; }
+    //}
+
+
+    @media screen and (min-width: 1024px ) {
+        .cabecalho{
+            &__navegacao{
+
+            }
+            &__navegacao{
+                
+            }
+            &__link{
+                font-size: 1.875rem;
+
+            }
+        }
+        .borda_img{
+            border: 10px solid var(--bg-chamada-mobile);
+           border-radius: 20px; 
+        }
+        .motivo_gika{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gika{
+            &__texto {
+                font-size: 1.25rem;
+                line-height: normal;
+
+
+                border-radius: 1.875rem;
+                padding: 0.625rem;
+            }
+        .ghibi{
+            width: 25%;
+            
+           
+            
+                &__container{
+
+                    flex-direction: column;
+                    
+                    
+                }
+        }
+    }
+}
