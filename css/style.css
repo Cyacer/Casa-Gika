@@ -20,6 +20,7 @@
   --sombra: #00000020;
   --montserrat: "Monteserrat", sans-serif;
   --Open-Sans: "Open Sans",sans-serif;
+  --permanent-marker: "Permanent Marker",cursive;
 }
 
 body {
@@ -175,7 +176,6 @@ body {
   background-color: var(--cinza-claro);
   padding-top: 3rem;
   padding-bottom: 3rem;
-  /*Beneficios*/
 }
 .beneficios__titulo {
   color: var(--cinza-escuro);
@@ -186,12 +186,15 @@ body {
   text-align: center;
   margin-bottom: 1.25rem;
 }
-.beneficios .planos__cartoes {
+
+/*Beneficios*/
+.planos__cartoes {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.beneficios .cartao {
+
+.cartao {
   display: flex;
   flex-direction: column;
   background-color: var(--branco);
@@ -201,7 +204,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 10px 2px #00000010;
 }
-.beneficios .cartao__titulo {
+.cartao__titulo {
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
@@ -209,21 +212,21 @@ body {
   margin-bottom: 0.5rem;
   border-bottom: 1px solid var(--azul-claro);
 }
-.beneficios .cartao__conteudo {
+.cartao__conteudo {
   padding: 0 15%;
 }
-.beneficios .cartao__preco {
+.cartao__preco {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 5.625rem;
   text-align: center;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.beneficios .cartao__texto {
+.cartao__texto {
   color: var(--fonte-cinza);
   line-height: 28px;
 }
-.beneficios .cartao__botao {
+.cartao__botao {
   font-size: 1.2rem;
   font-weight: 700;
   width: 100%;
@@ -232,23 +235,42 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.beneficios .cartao--twitch {
+.cartao--twitch {
   color: var(--planos-cartao-twitch);
 }
-.beneficios .cartao--discord {
-  color: var(--planos-cartao-ultra);
+.cartao--discord {
+  color: var(--planos-cartao-discord);
 }
-.beneficios .cartao--tik_tok {
-  color: var(--planos-cartao-mega);
+.cartao--tik_tok {
+  color: var(--planos-cartao-tik_tok);
 }
-.beneficios .cartao__botao--twitch {
+.cartao__botao--twitch {
   border-color: var(--planos-cartao-twitch);
 }
-.beneficios .cartao__botao--discord {
+.cartao__botao--discord {
   border-color: var(--planos-cartao-discord);
 }
-.beneficios .cartao__botao--tik_tok {
+.cartao__botao--tik_tok {
   border-color: var(--planos-cartao-tik_tok);
+}
+
+.marcacao_text {
+  font-size: 25px;
+  margin-right: 5px;
+  color: var(--planos-cartao-twitch);
+  font-family: var(--permanent-marker);
+}
+.marcacao_text_tik_tok {
+  font-size: 25px;
+  margin-right: 5px;
+  color: var(--planos-cartao-tik_tok);
+  font-family: var(--permanent-marker);
+}
+.marcacao_text_discord {
+  font-size: 25px;
+  margin-right: 5px;
+  color: var(--planos-cartao-discord);
+  font-family: var(--permanent-marker);
 }
 
 @media screen and (min-width: 1024px) {
@@ -280,6 +302,23 @@ body {
   }
   .ghibi_espanca {
     width: 45%;
+  }
+
+  .planos__cartoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .cartao {
+    max-width: 300px;
+  }
+
+  .twitch-pricipal {
+    margin-bottom: 60px;
   }
 }
 
